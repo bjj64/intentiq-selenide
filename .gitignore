@@ -31,7 +31,5 @@
 *.ipr
 *.iws
 
-# Gradle-specific files
-.gradle/
-gradlew
-gradlew.bat
+
+
