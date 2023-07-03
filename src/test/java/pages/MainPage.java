@@ -33,23 +33,4 @@ public class MainPage {
         sigInButton.shouldHave(text("Sign In"));
         sigInButton.click();
      }
-    // public void calculate(String expression) {
-    //     inputField.setValue(expression);
-    //     calcButtonField.click();
-    // }
-
-
-    // public String getResult() {
-    //     try {
-    //         Thread.sleep(1000);
-    //     } catch (InterruptedException e) {
-    //         e.printStackTrace();
-    //     }
-    //     return inputField.getValue();
-    // }
-
-    // public String getHistory() {
-    //     historyDropDownField.click();
-    //     return historyFrameLastValue.getText();
-    // }
 }
