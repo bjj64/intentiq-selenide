@@ -12,6 +12,8 @@
 # Test report directory
 /reports/
 
+/target/
+
 # Selenide configuration file
 /selenide.properties
 
