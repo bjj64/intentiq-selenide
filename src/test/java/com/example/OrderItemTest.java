@@ -18,10 +18,6 @@ public class OrderItemTest {
     private BagsPage bagsPage;
     private CheckOutPage checkOutPage;
 
-    String firstExpressionString = DataReader.getUserEmail();
-    String secondExpressionString = DataReader.getUserPassword();
-
-
     @BeforeEach
     public void setUp() {
         BrowserConfiguration.configure();
