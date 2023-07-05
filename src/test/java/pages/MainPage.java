@@ -8,7 +8,7 @@ import utils.DataReader;
 
 public class MainPage {
 
-    String testUrl = DataReader.getUrl();
+    String testUrl = DataReader.getData( DataReader.class).getUrl();
 
     private final SelenideElement gearsMenuButton = $("#ui-id-6");
     private final SelenideElement bagsButton = $("#ui-id-25");
