@@ -6,27 +6,24 @@ import static com.codeborne.selenide.Condition.*;
 import utils.DataReader;
 
 public class LoginPage {
-
-    String email = DataReader.getUserEmail();
-    String password = DataReader.getUserPassword();
-
     private final SelenideElement emailInputField = $("#email");
     private final SelenideElement passwordInputField = $("#pass");
     private final SelenideElement signInButton = $("#send2");
 
-
     public void setUserEmail() {
+        String email = DataReader.getData( DataReader.class).getUserEmail();
         emailInputField.shouldBe(visible);
         emailInputField.setValue(email);
-     }
+    }
 
     public void setUserPassword() {
+        String password = DataReader.getData( DataReader.class).getUserPassword();
         passwordInputField.shouldBe(visible);
         passwordInputField.setValue(password);
-     }
+    }
 
-     public void clickOnSignInButton() {
+    public void clickOnSignInButton() {
         signInButton.shouldBe(visible);
-       signInButton.click();
-     }
+        signInButton.click();
+    }
 }
