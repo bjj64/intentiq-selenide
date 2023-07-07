@@ -8,17 +8,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Data;
 
 import java.io.File;
-import java.io.IOException;
 
 @Data
 public class DataReader {
-    @JsonProperty("url")
     private String url;
-
-    @JsonProperty("userEmail")
     private String userEmail;
-
-    @JsonProperty("userPassword")
     private String userPassword;
 
     public static <T> T getData(Class<T> clazz) {
