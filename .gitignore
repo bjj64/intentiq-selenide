@@ -9,6 +9,9 @@
 .project
 .settings/
 
+./models/
+/data/
+
 # Test report directory
 /reports/
 

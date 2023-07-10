@@ -1,16 +1,15 @@
 package com.example;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.AfterEach;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
-import utils.DataReader;
 import pages.BagsPage;
 import pages.LoginPage;
 import pages.MainPage;
 import pages.CheckOutPage;
 import utils.BrowserConfiguration;
-
-
+import models.FilePathHolder;
 
 public class OrderItemTest {
     private MainPage mainPage;
@@ -35,6 +34,11 @@ public class OrderItemTest {
         closeWebDriver();
     }
 
+    /**
+     * This test Opens bags section and chooses bag
+     * after that creates order for the delivery for the authoried user
+     */
+
     @Test
     public void testPlaceBagOrder() {
         bagsPage = new BagsPage();
@@ -50,6 +54,6 @@ public class OrderItemTest {
         checkOutPage.clickOnNextButton();
         checkOutPage.placeOrderButton();
         checkOutPage.getOrderIdNumber();
-        checkOutPage.writeOrderIdToFile("./src/data/test_data.txt");
+        checkOutPage.writeOrderIdToFile(FilePathHolder.OUTPUT_DATA_FILE_PATH);
     }
 }

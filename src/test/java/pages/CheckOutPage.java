@@ -12,22 +12,22 @@ public class CheckOutPage {
     private final SelenideElement placeOrderButton = $("button[type=submit][class^='action primary checkout']");
     private final SelenideElement orderIdLink = $("a[class^=order-number]");
 
-     public void clickOnTableRateShippingMethod() {
+    public void clickOnTableRateShippingMethod() {
         shippingMethodRadioButton.shouldBe(visible);
         shippingMethodRadioButton.click();
-     }
+    }
 
     public void clickOnNextButton() {
         nextButton.shouldBe(visible);
         nextButton.click();
-     }
+    }
 
-     public void placeOrderButton() {
+    public void placeOrderButton() {
         placeOrderButton.shouldBe(visible);
         placeOrderButton.click();
-     }
+    }
 
-     public String getOrderIdNumber() {
+    public String getOrderIdNumber() {
         orderIdLink.shouldBe(visible);
         return orderIdLink.getText();
     }

@@ -13,15 +13,15 @@ public class LoginPage {
     User user = DataReader.getData(User.class);
 
     public void setUserEmail() {
-        String userEmail = user.getUserEmail();
+        String email = user.getEmail();
         emailInputField.shouldBe(visible);
-        emailInputField.setValue(userEmail);
+        emailInputField.setValue(email);
     }
 
     public void setUserPassword() {
-        String userPassword = user.getUserPassword();
+        String password = user.getPassword();
         passwordInputField.shouldBe(visible);
-        passwordInputField.setValue(userPassword);
+        passwordInputField.setValue(password);
     }
 
     public void clickOnSignInButton() {
