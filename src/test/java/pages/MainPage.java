@@ -5,7 +5,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Condition.*;
 import com.codeborne.selenide.Selenide;
 import utils.DataReader;
-import utils.User;
+import models.User;
 
 public class MainPage {
 

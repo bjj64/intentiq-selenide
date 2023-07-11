@@ -9,7 +9,7 @@
 .project
 .settings/
 
-./models/
+./models/FilePathHolder.java
 /data/
 
 # Test report directory

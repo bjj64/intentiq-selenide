@@ -4,7 +4,7 @@ import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Condition.*;
 import utils.DataReader;
-import utils.User;
+import models.User;
 
 public class LoginPage {
     private final SelenideElement emailInputField = $("#email");
